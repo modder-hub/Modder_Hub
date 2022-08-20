@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../reset-meyer.css">
+<style type="text/css">
+body {
+	margin:10px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif
+}
+
+
+#box1 {
+background:white;
+border: dashed;
+border-width: 2px 4px;
+border-radius: 20px;
+  
+}
+
+h2, p  {
+	padding:5px;
+}
+
+ #box1 p {
+	white-space:pre;
+	font-size:smaller;
+	font-family:monospace;
+}
+</style>
+	
+  </head>
+  <body>
+	<div >
+	  <span style="color: #fcff01; font-size: x-large;"><b style="background-color: red; margin:5px;
+		  border-radius: 37px;
+		  border-width: 100px;
+		  border-radius: 10px 100px / 120px;
+		  text-align: center; padding:5px;">.Introduction :</b></span>
+	</div>
+	<div id="box1">
+	  <h2>In dalvik's bytecode, registers are always 32 bits, and can hold any type of value. 2 registers are used to hold 64 bit types (Long and Double).</h2>
+	</div>
+	<div >
+	  <span style="color: #fcff01; font-size: x-large;"><b style="background-color: red; margin:5px;
+		  border-radius: 37px;
+		  border-width: 100px;
+		  border-radius: 10px 100px / 120px;
+		  text-align: center; padding:5px;">.How method parameters are passed into a method :</b></span>
+	</div>
+	<div id= "box1">
+	  <h2>When a method is invoked, the parameters to the method are placed into the last n registers. If a method has 2 arguments, and 5 registers (v0-v4), the arguments would be placed into the last 2 registers - v3 and v4.</h2><h2>&nbsp;The first parameter to a non-static methods is always the object that the method is being invoked on (the this object)</h2><h2>&nbsp;For example, let's say you are writing a non-static method <i><span style="color: red;">LMyObject;-&gt;callMe(II)V</span></i>. This method has 2 integer parameters, but it also has an implicit LMyObject; parameter before both integer parameters, so there are a total of 3 arguments to the method.&nbsp;</h2><h2>&nbsp;Let's say you specify that there are 5 registers in the method (v0-v4), with either the .registers 5 directive or the .locals 2 directive (i.e. 2 local registers + 3 parameter registers). When the method is invoked, the object that the method is being invoked on (i.e. the this reference) will be in v2, the first integer parameter will be in v3, and the second integer parameter will be in v4.&nbsp;</h2><h2>&nbsp;For static methods it's the same thing, except there isn't an implicit this argument.</h2>
+	</div>
+	<div >
+	  <span style="color: #fcff01; font-size: x-large;"><b style="background-color: red; margin:5px;
+		  border-radius: 37px;
+		  border-width: 100px;
+		  border-radius: 10px 100px / 120px;
+		  text-align: center; padding:5px;">Long/Double values :</b></span>
+	</div>
+	<div id= "box1">
+	  <h2>As mentioned previously, long and double primitives (J and D respectively) are 64 bit values, and require 2 registers. This is important to keep in mind when you are referencing method arguments. For example, let's say you have a (non-static) method <i><span style="color: red;">LMyObject;-&gt;MyMethod(IJZ)V</span></i>. The parameters to the method are <i><span style="color: red;">LMyObject;</span></i>, int, long, bool. So this method would require 5 registers for all of its parameters.&nbsp;</h2><h2>&nbsp;• p0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;this&nbsp;</h2><h2>&nbsp;• p1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I</h2><h2>&nbsp;• p2, p3&nbsp; &nbsp; &nbsp;J</h2><h2>&nbsp;• p4&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Z&nbsp;</h2><h2>&nbsp;Also, when you are invoking the method later on, you do have to specify both registers for any double-wide arguments in the register list for the invoke-kind instruction.</h2></div>
+ 	<div >
+	  <span style="color: #fcff01; font-size: x-large;"><b style="background-color: red; margin:5px;
+		  border-radius: 37px;
+		  border-width: 100px;
+		  border-radius: 10px 100px / 120px;
+		  text-align: center; padding:5px;">Register Names :</b></span>
+	</div>
+	<div id= "box1">
+	  <h2>There are two naming schemes for registers - the normal v# naming scheme and the p# naming scheme for parameter registers. The first register in the p# naming scheme is the first parameter register in the method. So let's go back to the previous example of a method with 3 arguments and 5 total registers. The following table shows the normal v# name for each register, followed by the p# name for the parameter registers&nbsp;</h2><h2>&nbsp;• v0  The first local register&nbsp;</h2><h2>• v1  The second local register</h2><h2>&nbsp;• v2  p0 The first parameter register</h2><h2>&nbsp;• v3  p1 The second parameter register</h2><h2>&nbsp;• v4  p2 The third parameter register&nbsp;</h2><h2><br /></h2><h2>&nbsp;You can reference parameter registers by either name - it makes no difference.</h2><h2>&nbsp;Motivation for introducing parameter registers:&nbsp;</h2><h2>&nbsp;The p# naming scheme was introduced as a practical matter, to solve a common annoyance when editing smali code.&nbsp;</h2><h2>&nbsp;Say you have an existing method with a number of parameters and you are adding some code to the method, and you discover that you need an extra register. You think "No big deal, I'll just increase the number of registers specified in the .registers directive!".</h2><h2>&nbsp;Unfortunately, it isn't quite that easy. Keep in mind that the method parameters are stored in the last registers in the method. If you increase the number of registers - you change which registers the method arguments get put into. So you would have to change the .registers directive and renumber every parameter register.&nbsp;</h2><h2>&nbsp;But if the p# naming scheme was used to reference parameter registers throughout the method, you can easily change the number of registers in the method, without having to worry about renumbering any existing registers.</h2>
+	</div>
+	  </body>
+</html>
