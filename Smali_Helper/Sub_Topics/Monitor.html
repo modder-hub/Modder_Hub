@@ -1,10 +1,10 @@
 [
 {
 "Heading":"monitor-enter",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">monitor-enter</span> <span style=\"color: #e69138;\">vAA</span></b><b><br /></b><b><br /></b><b><span style=\"color: #ea9999;\">A</span>: Reference-bearing register (8 bits)</b><b><br /></b><b>Acquire the <span style=\"color: #2b00fe;\"><i>monitor</i></span> for the indicated object.</b></h3>"
 },
 {
 "Heading":"monitor-exit",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">monitor-exit</span> <span style=\"color: #e69138;\">vAA</span></b><b><br /></b><b><br /></b><b><span style=\"color: #ea9999;\">A</span>: Reference-bearing register (8 bits)</b><b><br /></b><b>Release the <span style=\"color: #2b00fe;\"><i>monitor</i></span> for the indicated object.</b><b><br /></b><b>Note: If this instruction needs to <span style=\"color: #2b00fe;\"><i>throw</i></span> an <span style=\"color: #cc0000;\">exception</span>, it must do so as if the device has already <span style=\"color: #45818e;\"><i>advanced past</i></span> the instruction. It maybe useful to think of this as the instruction successfully executing (in a sense), and the <span style=\"color: #cc0000;\">exception</span> getting thrown after the instruction but before the next one gets a chance to run.This definition makes it possible for a method to use a <span style=\"color: #2b00fe;\"><i>monitor</i></span> cleanup <span style=\"color: #bf9000;\">catch-all</span> (e.g., finally) block as the <span style=\"color: #2b00fe;\"><i>monitor</i></span> cleanup for that block itself, as a way to handle the arbitrary exceptions that might get thrown due to the historical implementation of <i><span style=\"color: #e69138;\">Thread.stop()</span></i>, while still managing to have proper <i><span style=\"color: #2b00fe;\">monitor</span></i> hygiene.</b></h3>"
 }
 ]
