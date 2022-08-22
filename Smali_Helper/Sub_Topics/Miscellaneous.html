@@ -1,22 +1,22 @@
 [
 {
 "Heading":"check-cast",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">check-cast</span> <span style=\"color: #e69138;\">vAA</span>, <i><span style=\"color: #e69138;\">Lclass</span></i></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Reference-bearing register (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: Type reference (16 bits)</b><b><br /></b><b>Checks whether the object reference in <span style=\"color: #e69138;\">vAA</span> can be cast to an instance of a type referenced by class.&nbsp;</b><b><br /></b><b>Throws <span style=\"color: #e06666;\">ClassCastException</span> if the <span style=\"color: #2b00fe;\"><i>cast</i></span> is not possible, continues execution otherwise.</b></h3>"
 },
 {
 "Heading":"instance-of",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">instance-of</span> <span style=\"color: #e69138;\">vA</span>,<span style=\"color: #e69138;\"> vB</span>, <i><span style=\"color: #e69138;\">Lclass</span></i></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (4 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: Reference-bearing register (4 bits)<br /></b><b><span style=\"color: #e06666;\">C</span>: Class reference (16 bits)</b><b><br /></b><b>Checks whether <span style=\"color: #e69138;\">vB</span> is <span style=\"color: #2b00fe;\"><i>instance of</i></span> a class. Sets <span style=\"color: #e69138;\">vA</span> non-zero if it is, <span style=\"color: #cc0000;\">0</span> if it is not.</b></h3>"
 },
 {
 "Heading":"new-instance",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">new-instance</span> <span style=\"color: #e69138;\">vAA</span>, <i><span style=\"color: #e69138;\">Lclass</span></i></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: Type reference</b><b><br /></b><b>Instantiates an <i><span style=\"color: #674ea7;\">object</span></i> of type class and puts the reference of the newly created <span style=\"color: #2b00fe;\"><i>instance</i></span> into <span style=\"color: #e69138;\">vAA</span>.<br /></b><b>The type must refer to a <i><span style=\"color: #2b00fe;\">non-array</span></i> class.</b></h3>"
 },
 {
 "Heading":"nop",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b>&nbsp;<span style=\"color: red;\">nop</span></b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>No Operation.</b></h3>"
 },
 {
 "Heading":"throw",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">throw</span> <span style=\"color: #e69138;\">vAA</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: <span style=\"color: #6aa84f;\"><i>Exception-bearing</i></span> register (8 bits)</b><b><br /></b><b>Throws the indicated <i><span style=\"color: #2b00fe;\">exception</span></i>. The exception <i><span style=\"color: #2b00fe;\">object</span></i> reference is in <span style=\"color: #e69138;\">vAA</span>.</b></h3>"
 }
 ]
