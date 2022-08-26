@@ -5,20 +5,20 @@
 },
 {
 "Heading":"fill-array-data",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">fill-array-data</span> <span style=\"color: #e69138;\">vA+</span>, :target</b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Register pair containing an <span style=\"color: #2b00fe;\"><i>array</i></span> reference<br /></b><b><span style=\"color: #e06666;\">B</span>: The target label defining the <span style=\"color: #2b00fe;\"><i>array-data</i></span> table</b><b><br /></b><b>Fill the given <span style=\"color: #2b00fe;\"><i>array</i></span> <span style=\"color: #e69138;\">vA+</span> with the indicated data at target. The reference must be to an <i><span style=\"color: #2b00fe;\">array</span></i> of primitives, and the data table must match it in type and size. The width of the <i><span style=\"color: #2b00fe;\">array</span></i> is defined in the table.</b><b><br /></b><b>Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <span style=\"color: #e69138;\">vX+1</span>. eg <span style=\"color: #e69138;\">v1</span>, <span style=\"color: #e69138;\">v2</span>.</b><b><br /></b><b>Example data table:<br /></b><b>:target<br /></b><b>&nbsp; &nbsp;.<span style=\"color: #2b00fe;\"><i>array-data</i></span> <span style=\"color: #e69138;\">0x2</span><br /></b><b>&nbsp; &nbsp; &nbsp; <span style=\"color: #e69138;\"><i>0x01</i></span> <span style=\"color: #e69138;\"><i>0x02</i></span><br /></b><b>&nbsp; &nbsp; &nbsp; <i><span style=\"color: #e69138;\">0x03</span></i> <i><span style=\"color: #e69138;\">0x04</span></i><br /></b><b>&nbsp; &nbsp;.end <span style=\"color: #2b00fe;\"><i>array-data</i></span></b></h3>"
 },
 {
 "Heading":"filled-new-array",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">filled-new-array</span> <span style=\"color: #e69138;\">{ vA [ vB, v.., vX ]}</span>, <i><span style=\"color: #e69138;\">Lclass;-&gt;type</span></i></b><b><br /></b><b><br /></b><b><i><span style=\"color: #e06666;\">vA-vX</span></i>: Argument registers (4 bits each)<br /></b><b><span style=\"color: #e06666;\">B</span>: Type reference</b><b><br /></b><b>Construct a new <i><span style=\"color: #2b00fe;\">array</span></i> of the indicated type and size. The type must be an <i><span style=\"color: #2b00fe;\">array</span></i> type. Reference to the newly generated <i><span style=\"color: #2b00fe;\">array</span></i> can be obtained by a <span style=\"color: #674ea7;\"><i>move-result-object</i></span> instruction, immediately following the <span style=\"color: red;\">filled-new-array</span> instruction.</b></h3>"
 },
 {
 "Heading":"filled-new-array/range",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">filled-new-array/range</span><span style=\"color: #e69138;\"> { vA .. vX }</span>, <i><span style=\"color: #e69138;\">Lclass;-&gt;type</span></i></b><b><br /></b><b><br /></b><b><i><span style=\"color: #e06666;\">vA .. vX</span></i>: Range of registers containing <i><span style=\"color: #2b00fe;\">array</span></i> parameters (4 bits each)<br /></b><b><span style=\"color: #e06666;\">B</span>: Type reference (16 bits)</b><b><br /></b><b>Construct a new array of the indicated type. The type must be an <i><span style=\"color: #2b00fe;\">array</span></i> type. Reference to the newly generated array can be obtained by a <span style=\"color: #3d85c6;\"><i>move-result-object</i></span> instruction, immediately following the <span style=\"color: red;\">filled-new-array/range</span> instruction.</b></h3>"
 
 },
 {
 "Heading":"new-array",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">new-array</span> <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB</span>, <i><span style=\"color: #e69138;\">Lclass;-&gt;type</span></i></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: Size register<br /></b><b><span style=\"color: #e06666;\">C</span>: Type reference</b><b><br /></b><b>Construct a new <span style=\"color: #2b00fe;\"><i>array</i></span> of the indicated type and size. The type must be an <i><span style=\"color: #2b00fe;\">array</span></i> type.</b></h3>"
 
 }
 ]
