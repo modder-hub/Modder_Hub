@@ -1,25 +1,25 @@
 [
 {
 "Heading":"cmp-long",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">cmp-long</span> <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB+</span>, <span style=\"color: #e69138;\">vC+</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register<br /></b><b><span style=\"color: #e06666;\">B</span>: First source register pair<br /></b><b><span style=\"color: #e06666;\">C</span>: Second source register pair</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Compares the long values in the source registers, storing <span style=\"color: #cc0000;\">0</span> if the two arguments are equal, <span style=\"color: #cc0000;\">1</span> if the second argument is larger, or <span style=\"color: #cc0000;\">-1</span> if the first argument is larger.&nbsp;</b><b><br /></b><b>Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <i><span style=\"color: #e69138;\">vX+1</span></i>. eg <span style=\"color: #e69138;\">v1</span>, <span style=\"color: #e69138;\">v2</span>.</b></h3>"
 },
 {
 "Heading":"cmpg-double",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">cmpg-double</span> <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB+</span>, <span style=\"color: #e69138;\">vC+</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register<br /></b><b><span style=\"color: #e06666;\">B</span>: First source register or pair<br /></b><b><span style=\"color: #e06666;\">C</span>: Second source register or pair</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Compares the <i>double</i> values in the source registers, storing <span style=\"color: #cc0000;\">0</span> if the two arguments are equal, <span style=\"color: #cc0000;\">1</span> if the second argument is larger, or <span style=\"color: #cc0000;\">-1</span> if the first argument is larger. If either <span style=\"color: #e69138;\">vB+</span> or <span style=\"color: #e69138;\">vC</span> are not a number, <span style=\"color: #cc0000;\">1</span> is returned.</b><b><br /></b><b>Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <span style=\"color: #e69138;\"><i>vX+1</i></span>. eg <span style=\"color: #e69138;\">v1</span>, <span style=\"color: #e69138;\">v2</span>.</b></h3>"
 },
 {
 "Heading":"cmpg-float",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">cmpg-float</span> <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB</span>, <span style=\"color: #e69138;\">vC</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register<br /></b><b><span style=\"color: #e06666;\">B</span>: First source register<br /></b><b><span style=\"color: #e06666;\">C</span>: Second source register</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Compares the <i>floating</i> point values in the source registers, storing <span style=\"color: #cc0000;\">0</span> if the two arguments are equal, <span style=\"color: #cc0000;\">1</span> if the second argument is larger, or <span style=\"color: #cc0000;\">-1</span> if the first argument is larger. If either <span style=\"color: #e69138;\">vB</span> or <span style=\"color: #e69138;\">vC</span> are not a number, <span style=\"color: #cc0000;\">1</span> is returned.</b></h3>"
 },
 
 {
 "Heading":"cmpl-double",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">cmpl-double</span> <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB+</span>, <span style=\"color: #e69138;\">vC+</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register<br /></b><b><span style=\"color: #e69138;\">B</span>: First source register pair<br /></b><b><span style=\"color: #e06666;\">C</span>: Second source register pair</b><b><br /></b><b><br /></b><b>Compares the <i>double</i> values in the source registers, storing <span style=\"color: #cc0000;\">0</span> if the two arguments are equal, <span style=\"color: #cc0000;\">1</span> if the second argument is larger, or <span style=\"color: #cc0000;\">-1</span> if the first argument is larger. If either <span style=\"color: #e69138;\">vB+</span> or <span style=\"color: #e69138;\">vC+</span> are not a number, <span style=\"color: #cc0000;\">-1</span> is returned.</b><b><br /></b><b>Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <span style=\"color: #e69138;\"><i>vX+1</i></span>. eg <span style=\"color: #e69138;\">v1</span>, <span style=\"color: #e69138;\">v2</span>.</b></h3>"
 },
 
 {
 "Heading":"cmpl-float",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">cmpl-float</span> <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB</span>, <span style=\"color: #e69138;\">vC</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register<br /></b><b><span style=\"color: #e06666;\">B</span>: First source register<br /></b><b><span style=\"color: #e06666;\">C</span>: Second source register</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Perform the indicated <i>floating</i> point comparison, storing <span style=\"color: #cc0000;\">0</span> if the two arguments are equal, <span style=\"color: #cc0000;\">1</span> if the second argument is larger, or <span style=\"color: #cc0000;\">-1</span> if the first argument is larger. If either <span style=\"color: #e69138;\">vB</span> or <span style=\"color: #e69138;\">vC</span> are not a number,<span style=\"color: #cc0000;\"> -1</span> is returned.</b></h3>"
 
 }
 ]
