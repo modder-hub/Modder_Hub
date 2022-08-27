@@ -1,14 +1,14 @@
 [
 {
 "Heading":"goto",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">goto</span> :<span style=\"color: #e06666;\">target</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">target</span>: The label of the <i><span style=\"color: #6aa84f;\">target</span></i> instruction</b></h3><h3 style=\"text-align: left;\"><b>Unconditional branch to :<span style=\"color: #e06666;\">target</span>.</b></h3>"
 },
 {
 "Heading":"goto/16",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">goto/16</span> :<span style=\"color: #e06666;\">target</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">target</span>: The label of the <i><span style=\"color: #6aa84f;\">target</span></i> instruction</b></h3><h3 style=\"text-align: left;\"><b>Unconditional branch to :<span style=\"color: #e06666;\">target</span>.</b></h3><h3 style=\"text-align: left;\"><b>Note: <span style=\"color: #2b00fe;\"><i>goto's</i></span> literally use <span style=\"color: #e69138;\">+/-</span> offsets from the current instruction. <span style=\"color: #ff00fe;\">APKTool</span> translates these into labels for readability. If under the hood, the offset requires a <span style=\"color: #cc0000;\">16</span>-bit value, <i><span style=\"color: #2b00fe;\">goto/16</span></i> must be used. it is near impossible to determine if <i><span style=\"color: #2b00fe;\">goto/16</span></i> is required while adding a new instruction. When in doubt, a <i><span style=\"color: #2b00fe;\">goto/16</span></i> can replace any goto but not <i>vice-versa</i>.</b></h3>"
 },
 {
 "Heading":"goto/32",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">goto/32</span> :<span style=\"color: #e06666;\">target</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">target</span>: The label of the <i><span style=\"color: #6aa84f;\">target</span></i> instruction</b></h3><h3 style=\"text-align: left;\"><b>Unconditional branch to :<span style=\"color: #e06666;\">target</span>.</b></h3><h3 style=\"text-align: left;\"><b>Note: <span style=\"color: #2b00fe;\"><i>goto's</i></span> literally use <span style=\"color: #e69138;\">+/- </span>offsets from the current instruction. <span style=\"color: #3d85c6;\"><i>APKTool</i></span> translates these into labels for readability. If under the hood, the offset requires a <span style=\"color: #cc0000;\">32</span>-bit value, <span style=\"color: #2b00fe;\"><i>goto/32</i></span> must be used. it is near impossible to determine if <span style=\"color: #2b00fe;\"><i>goto/32</i></span> is required while adding a new instruction. When in doubt, a <i><span style=\"color: #2b00fe;\">goto/32</span></i> can replace any <i><span style=\"color: #2b00fe;\">goto</span></i> or <i><span style=\"color: #2b00fe;\">goto/16</span></i>, but not <i>vice-versa</i>.</b></h3>"
 }
 ]
