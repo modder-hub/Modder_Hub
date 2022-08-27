@@ -1,47 +1,47 @@
 [
 {
 "Heading":"const",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const</span> <span style=\"color: #e69138;\">vAA</span>, <i><span style=\"color: #e06666;\">#+BBBBBBBB</span></i></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: 32-bit signed constant integer</b><b><br /></b><b>Move the given constant integer value into the specified register <span style=\"color: #e69138;\">vAA</span>.</b></h3>"
 },
 {
 "Heading":"const/16",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const/16</span> <span style=\"color: #e69138;\">vAA</span>, <span style=\"color: #e69138;\">#+BBBB</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: Signed integer (16 bits)</b><b><br /></b><b>Puts the integer <i><span style=\"color: #2b00fe;\">constant</span></i> <span style=\"color: #e69138;\"><i>BBBB</i></span> into the destination register <span style=\"color: #e69138;\">vAA</span>.</b></h3>"
 },
 {
 "Heading":"const/4",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const/4</span> <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">#+B</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (4 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: Signed integer constant (4 bits)</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Puts the given <span style=\"color: #cc0000;\">4</span> bit <span style=\"color: #bf9000;\">integer</span> <i><span style=\"color: #2b00fe;\">constant</span></i> into the destination register <span style=\"color: #e69138;\">vA</span>.</b></h3>"
 },
 {
 "Heading":"const/high16",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const/high16</span> <span style=\"color: #e69138;\">vAA</span>, <span style=\"color: #e69138;\">#+BBBB</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: Signed integer constant (16 bits)</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Puts the <span style=\"color: #cc0000;\">16 </span>bit constant into the top-most bits of the register <span style=\"color: #e69138;\">vAA</span>. Used to <i>initialize</i> <span style=\"color: #bf9000;\">float</span> values.</b></h3>"
 },
 {
 "Heading":"const-class",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const-class</span> <span style=\"color: #e69138;\">vAA</span>, <i><span style=\"color: #e69138;\">Lclass</span></i></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: Class reference</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Move a reference to the <i><span style=\"color: #2b00fe;\">class</span></i> specified into the destination register <span style=\"color: #e69138;\">vAA</span>. In the case where the indicated type is primitive, this will store a reference to the primitive type's degenerate <i><span style=\"color: #2b00fe;\">class</span></i>.</b></h3>"
 },
 {
 "Heading":"const-string",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const-string</span> <span style=\"color: #e69138;\">vAA</span>, \"<span style=\"color: #ff00fe;\">BBBB</span>\"</b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: String value</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Move a reference to the <i><span style=\"color: #2b00fe;\">string</span></i> specified into the destination register <span style=\"color: #e69138;\">vAA</span>.</b></h3>"
 },
 {
 "Heading":"const-string/jumbo",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const-string/jumbo</span> <span style=\"color: #e69138;\">vAA</span>, \"<span style=\"color: #ff00fe;\">BBBBBBBB</span>\"</b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: String value</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Move a reference to the <i><span style=\"color: #2b00fe;\">string</span></i> specified into the destination register <span style=\"color: #e69138;\">vAA</span>.</b></h3>"
 },
 {
 "Heading":"const-wide",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const-wide</span> <span style=\"color: #e69138;\">vA+</span>, <span style=\"color: #6aa84f;\">#+BBBBBBBBBBBBBBBB</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e69138;\">A</span>: Destination register pair (8 bits)<br /></b><b><span style=\"color: #e69138;\">B</span>: Signed double constant (64 bits)</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Puts the <span style=\"color: #cc0000;\">64</span> bit double <i><span style=\"color: #2b00fe;\">constant</span></i> into <span style=\"color: #e69138;\">vA+</span></b><b><br /></b><b>Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <i><span style=\"color: #e69138;\">vX+1</span></i>. eg <span style=\"color: #e69138;\">v1</span>, <span style=\"color: #e69138;\">v2</span>.</b></h3>"
 },
 {
 "Heading":"const-wide/16",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const-wide/16</span> <span style=\"color: #e69138;\">vA+</span>, <span style=\"color: #6aa84f;\">#+BBBB</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e69138;\">A</span>: Destination register pair (8 bits)<br /></b><b>B: Signed integer (16 bits)</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Puts the <span style=\"color: #3d85c6;\"><i>integer</i></span> <i><span style=\"color: #2b00fe;\">constant</span></i> into <span style=\"color: #e69138;\">vA+</span>, expanding the <i><span style=\"color: #3d85c6;\">integer</span></i> <i><span style=\"color: #2b00fe;\">constant</span></i> into a long <i><span style=\"color: #2b00fe;\">constant</span></i>.</b><b><br /></b><b>Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <i><span style=\"color: #e69138;\">vX+1</span></i>. eg <span style=\"color: #e69138;\">v1</span>, <span style=\"color: #e69138;\">v2</span>.</b></h3"
 },
 {
 "Heading":"const-wide/32",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const-wide/32</span> <span style=\"color: #e69138;\">vA+</span>, <span style=\"color: #6aa84f;\">#+BBBBBBBB</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e69138;\">A</span>: Destination register pair (8 bits)<br /></b><b>B: Signed integer (32 bits)</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Puts the 32 bit <span style=\"color: #3d85c6;\"><i>integer</i></span> <i><span style=\"color: #2b00fe;\">constant</span></i> into <span style=\"color: #e69138;\">vA+</span>, expanding the <i><span style=\"color: #3d85c6;\">integer</span></i> <i><span style=\"color: #2b00fe;\">constant</span></i> into a long <i><span style=\"color: #2b00fe;\">constant</span></i>.</b><b><br /></b><b>Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <i><span style=\"color: #e69138;\">vX+1</span></i>. eg <span style=\"color: #e69138;\">v1</span>, <span style=\"color: #e69138;\">v2</span>.</b></h3>"
 },
 {
 "Heading":"const-wide/high16",
-"Explanation":""
+"Explanation":"<h3 style=\"text-align: left;\"><b><span style=\"color: red;\">const-wide/high16</span> <span style=\"color: #e69138;\">vA+</span>, <span style=\"color: #6aa84f;\">#+BBBB</span></b><b><br /></b><b><br /></b><b><span style=\"color: #e06666;\">A</span>: Destination register pair (8 bits)<br /></b><b><span style=\"color: #e06666;\">B</span>: Signed double constant (16 bits)</b></h3><h3 style=\"text-align: left;\"><b><br /></b><b>Puts the <span style=\"color: #cc0000;\">16</span> bit double <i><span style=\"color: #2b00fe;\">constant</span></i> <span style=\"color: #6aa84f;\">(BBBB)</span> into the highest <span style=\"color: #cc0000;\">16</span> bit of <span style=\"color: #e69138;\">vA+</span>. Used to <i>initialize</i> double values.</b><b><br /></b><b>Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <i><span style=\"color: #e69138;\">vX+1</span></i>. eg <span style=\"color: #e69138;\">v1</span>, <span style=\"color: #e69138;\">v2</span>.</b></h3>"
 
 }
 ]
