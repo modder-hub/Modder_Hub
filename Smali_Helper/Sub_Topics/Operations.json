@@ -1,0 +1,319 @@
+[
+{
+"Heading":"add-double",
+"Explanation":"<p><b><span style=\"font-size: large;\">&nbsp;<span style=\"color: red;\">add-double</span>&nbsp; <span style=\"color: #e69138;\">vA+</span>, <span style=\"color: #e69138;\">vB+</span>, <span style=\"color: #e69138;\">vC+</span></span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\"><span style=\"color: #e06666;\">A</span>: Destination <i>register</i> pair (<span style=\"color: #674ea7;\">8 bits</span>)</span></b></p><p><b><span style=\"font-size: large;\"><span style=\"color: #e06666;\">B</span>: Source <i>register</i> pair <span style=\"color: #cc0000;\">1</span> (<span style=\"color: #674ea7;\">8 bits</span>)</span></b></p><p><b><span style=\"font-size: large;\"><span style=\"color: #e06666;\">C</span>: Source <i>register</i> pair <span style=\"color: #cc0000;\">2</span> (<span style=\"color: #674ea7;\">8 bits</span>)</span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\">Calculates <span style=\"color: #e69138;\">vB+</span> + <span style=\"color: #e69138;\">vC+</span> and stores the result in <span style=\"color: #e69138;\">vA+</span></span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\">All <i>registers</i> are of type <i><span style=\"color: #2b00fe;\">double</span></i>.</span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\">Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <span style=\"color: #e69138;\">vX+1</span>. eg <span style=\"color: #e69138;\">v1, v2</span>.</span></b></p>"
+},
+
+{
+"Heading":"add-double/2addr",
+"Explanation":"<p><b><span style=\"font-size: large;\">&nbsp;<span style=\"color: red;\">add-double/2addr</span>&nbsp; <span style=\"color: #e69138;\">vA+</span>, <span style=\"color: #e69138;\">vB+</span></span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\"><span style=\"color: #ea9999;\">A</span>: Source register pair <span style=\"color: #cc0000;\">1</span> / Destination <i>register</i> (<span style=\"color: #674ea7;\">8 bits</span>)</span></b></p><p><b><span style=\"font-size: large;\"><span style=\"color: #ea9999;\">B</span>: Source <i>register</i> pair 2 (<span style=\"color: #674ea7;\">8 bits</span>)</span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\">Calculates <span style=\"color: #e69138;\">vA+</span> + <span style=\"color: #e69138;\">vB+</span> and stores the result in <span style=\"color: #e69138;\">vA+</span></span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\">All <i>registers</i> are of type <i><span style=\"color: #2b00fe;\">double</span></i>.</span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\">Register pairs occupy <span style=\"color: #e69138;\">vX</span> and <span style=\"color: #e69138;\">vX+1</span>. eg <span style=\"color: #e69138;\">v1, v2</span>.</span></b></p>"
+},
+{
+"Heading":"add-float",
+"Explanation":"<p><span style=\"font-size: large;\"><b>&nbsp;<span style=\"color: red;\">add-float</span>&nbsp; <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB</span>, <span style=\"color: #e69138;\">vC</span></b></span></p><p><span style=\"font-size: large;\"><b><br /></b></span></p><p><span style=\"font-size: large;\"><b><span style=\"color: #e06666;\">A</span>: Destination register (<span style=\"color: #674ea7;\">4 bits</span>)&nbsp;</b></span></p><p><span style=\"font-size: large;\"><b><span style=\"color: #e06666;\">B</span>: Source register <span style=\"color: #cc0000;\">1</span> (<span style=\"color: #674ea7;\">4 bits</span>)&nbsp;</b></span></p><p><span style=\"font-size: large;\"><b><span style=\"color: #e06666;\">C</span>: Source register <span style=\"color: #cc0000;\">2</span> (<span style=\"color: #674ea7;\">4 bits</span>)&nbsp;</b></span></p><p><span style=\"font-size: large;\"><b><br /></b></span></p><p><span style=\"font-size: large;\"><b>Calculates <span style=\"color: #e69138;\">vB</span> + <span style=\"color: #e69138;\">vC</span> and stores the result in <span style=\"color: #e69138;\">vA</span>.</b></span></p><p><span style=\"font-size: large;\"><b><br /></b></span></p><p><span style=\"font-size: large;\"><b>All <i>registers</i> are of type <i><span style=\"color: #2b00fe;\">float</span></i>.</b></span></p>"
+},
+{
+"Heading":"add-float/2addr",
+"Explanation":"<p><b><span style=\"font-size: large;\">&nbsp;<span style=\"color: red;\">add-float/2addr</span>&nbsp; <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB</span></span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\"><span style=\"color: #e06666;\">A</span>: Source register <span style=\"color: #cc0000;\">1</span> / Destination <i>register</i> (<span style=\"color: #674ea7;\">4 bits</span>)</span></b></p><p><b><span style=\"font-size: large;\"><span style=\"color: #e06666;\">B</span>: Source register <span style=\"color: #cc0000;\">2</span> (<span style=\"color: #674ea7;\">4 bits</span>)</span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\">Calculates <span style=\"color: #e69138;\">vA</span> + <span style=\"color: #e69138;\">vB</span> and stores the result in <span style=\"color: #e69138;\">vA</span>.</span></b></p><p><b><span style=\"font-size: large;\"><br /></span></b></p><p><b><span style=\"font-size: large;\">All <i>registers</i> are of type <i><span style=\"color: #2b00fe;\">float</span></i>.</span></b></p>"
+},
+{
+"Heading":"add-int",
+"Explanation":"<p><span style=\"font-size: large;\"><b>&nbsp;<span style=\"color: red;\">add-int</span>&nbsp; <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB</span>, <span style=\"color: #e69138;\">vC</span></b></span></p><p><span style=\"font-size: large;\"><b><br /></b></span></p><p><span style=\"font-size: large;\"><b><span style=\"color: #e06666;\">A</span>: Destination <i>register</i> (<span style=\"color: #674ea7;\">4 bits</span>)</b></span></p><p><span style=\"font-size: large;\"><b><span style=\"color: #e06666;\">B</span>: Source <i>register</i> <span style=\"color: #cc0000;\">1</span> (<span style=\"color: #674ea7;\">4 bits</span>)</b></span></p><p><span style=\"font-size: large;\"><b><span style=\"color: #e06666;\">C</span>: Source <i>register</i> <span style=\"color: #cc0000;\">2</span> (<span style=\"color: #674ea7;\">4 bits</span>)</b></span></p><p><span style=\"font-size: large;\"><b><br /></b></span></p><p><span style=\"font-size: large;\"><b>Calculates <span style=\"color: #e69138;\">vB</span> + <span style=\"color: #e69138;\">vC</span> and stores the result in <span style=\"color: #e69138;\">vA</span>.</b></span></p><p><span style=\"font-size: large;\"><b><br /></b></span></p><p><span style=\"font-size: large;\"><b>All <i>registers</i> are of type <span style=\"color: #2b00fe;\"><i>int</i></span>.</b></span></p>"
+},
+{
+"Heading":"add-int/2addr",
+"Explanation":"<p><span style=\"font-size: large;\"><b>&nbsp;<span style=\"color: red;\">add-int/2addr</span>&nbsp; <span style=\"color: #e69138;\">vA</span>, <span style=\"color: #e69138;\">vB</span></b></span></p><p><span style=\"font-size: large;\"><b><br /></b></span></p><p><span style=\"font-size: large;\"><b><span style=\"color: #e06666;\">A</span>: Source <i>register</i> <span style=\"color: #cc0000;\">1</span> / Destination <i>register</i> (<span style=\"color: #674ea7;\">4 bits</span>)</b></span></p><p><span style=\"font-size: large;\"><b><span style=\"color: #e06666;\">B</span>: Source <i>register</i> <span style=\"color: #cc0000;\">2</span> (<span style=\"color: #674ea7;\">4 bits</span>)</b></span></p><p><span style=\"font-size: large;\"><b><br /></b></span></p><p><span style=\"font-size: large;\"><b>Calculates <span style=\"color: #e69138;\">vA</span> + <span style=\"color: #e69138;\">vB</span> and stores the result in <span style=\"color: #e69138;\">vA</span>.</b></span></p><p><span style=\"font-size: large;\"><b><br /></b></span></p><p><span style=\"font-size: large;\"><b>All <i>registers</i> are of type <i><span style=\"color: #2b00fe;\">int</span></i>.</b></span></p>"
+},
+{
+"Heading":"add-int/lit16",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"add-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"add-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"add-long/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"and-int",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"and-int/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"and-int/lit16",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"and-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"and-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"and-long/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-double",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-double/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-float",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-float/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-int",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-int/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-int/lit16",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"div-long/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-double",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-double/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-float",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-float/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-int",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-int/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-int/lit16",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"mul-long/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"or-int",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"or-int/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"or-int/lit16",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"or-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"or-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"or-long/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-double",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-double/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-float",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-float/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-int",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-int/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-int/lit16",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"rem-long/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"shl-int",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"shl-int/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"shl-int/lit16",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"shl-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"shl-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"shl-long/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-double",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-double/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-float",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-float/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-int",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-int/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-int/lit16",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"sub-long/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"ushr-int",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"ushr-int/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"ushr-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"ushr-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"ushr-long/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"xor-int",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"xor-int/2addr",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"xor-int/lit16",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"xor-int/lit8",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"xor-long",
+"Explanation":"Coming soon"
+},
+{
+"Heading":"xor-long/2addr",
+"Explanation":"Coming soon"
+}
+]
